@@ -1,6 +1,6 @@
 import logging
 import os
-
+from .data import data_blueprint
 from flask import Flask
 from logging.handlers import RotatingFileHandler
 os.environ['FLASK_APP'] = 'Pi_Car.app'
@@ -20,11 +20,7 @@ def create_app(confi_file="config/local_config.py"):
     app.logger.addHandler(log_file_handler)
     app.logger.setLevel(app.config.get("LOGGER_LEVEL", "ERROR"))
     app.logger.info("---- STARTING APP ----")
-
-    @app.route("/")
-    def hello_world():
-        app.logger.info("Running first route")
-        return "Hello, World"
-
+    app.register_blueprint(data_blueprint)
     app.logger.info("----- FINISHED STARTING APP -----")
+
     return app
