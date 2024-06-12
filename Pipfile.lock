@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "4ce392e7077d05de061c931316a3f2f9897ee51705be5623c5622d5c460153bc"
+            "sha256": "87dd5e2730f1ac288ce965d283aeea3e629f6ed69f1500c497282a3a21efa856"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -130,6 +130,15 @@
             ],
             "markers": "python_version >= '3.7'",
             "version": "==2.1.5"
+        },
+        "w1thermsensor": {
+            "hashes": [
+                "sha256:16f3236d401be809fe46aa4166c4441cc962b398a561aa60659e1fbe553aac94",
+                "sha256:9fbc0ae0dd66cd9b54c6d62ed7bab2b88e148c987fe7d5060f476f90e81c2270"
+            ],
+            "index": "pypi",
+            "markers": "python_version >= '3.7'",
+            "version": "==2.3.0"
         },
         "werkzeug": {
             "hashes": [
